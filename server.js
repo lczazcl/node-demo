@@ -49,7 +49,7 @@ var server = http.createServer(function(request, response){
     response.write('body{background-color:#DDD;}h1{color:red;}')
     response.end()
   }else if(path == '/script'){
-    response.setHeader('Content-Type','text/javascript; charset=utf=8')
+    response.setHeader('Content-Type','text/javascript; charset=utf-8')
     response.write('alert("这是JS执行的")')
     response.end()
   }else{
